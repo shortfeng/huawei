@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <title>网页</title>
+    <link rel="stylesheet" href="css/home.css">
+    <meta charset="utf-8">
+    <style>
+      #container{
+        width:100%;
+        height: 590px;
+        background: #081638;
+       
+      }
+      #bg{
+        height: 590px;
+        width:90%;
+        position: relative;
+        left: 100px;
+        background-image:url('https://hwid1.vmall.com/CAS/up/idmw_rss_24/ads/login_default_bg.png');
+        background-repeat:no-repeat ;
+      }
+      #container div.black{
+        width:280px;
+        height:300px;
+        background:rgba(0,0,0,.3);
+        margin:130px 0 0 900px;
+      }
+      #container div.black table{
+        width:100%;
+      }
+      #container h4{
+        color:#fff;
+        margin:0;
+      }
+      #container a{
+        color:#fff;
+        text-decoration:none;
+        font-size:12px;
+      }
+      input.uname,input.upwd{
+        width:100%;
+        height:34px;
+        border:none;
+        outline:0;
+        padding-left:15px;
+        margin-bottom:30px;
+        box-sizing:border-box;
+        background:#fff url(img/yhm.png) no-repeat 97% center;
+      }
+      input.upwd{
+        background-image:url(img/mm.png);
+      }
+      input.login{
+        width:100%;
+        height:36px;
+        margin-top:20px;
+      }
+      td.autoLogin{
+        color:#fff;
+        font-size:12px;
+      }
+      body>div:first-child{
+        margin-left:50px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div >
+      <img src="img/logo.png" >
+    </div>
+     <div id="container">
+       <div id="bg">
+        <table></table>
+        <div class="black">
+          <table>
+            <tr>
+              <td>
+                <h4>登录华为商城</h4>
+              </td>
+              <td>
+                <a href="#">新用户注册</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="text" placeholder="请输入您的用户名" class="uname" name="uname" value="">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="password" placeholder="请输入您的密码" class="upwd" value="" name="upwd">
+              </td>
+            </tr>
+            <tr>
+              <td class="autoLogin">
+                <input type="checkbox">自动登录
+              </td>
+              <td>
+                <a href="#">忘记密码？</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="button" value="登录" class="login">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+     </div>
+     <div class="my-foot3">
+        <div class="mycontainer">
+            <div class="my-foot3-img">
+                <img src="img/foot/flogo.png" alt=""/>
+            </div>
+            <div class="my-foot3-p">
+                <p>隐私声明 服务协议 Copyright @2012-2108 华为软件技术有限公司 版权所有 保留一切权力</p>
+                <p>公安备案 苏公网备案32011402010009号 | 苏ICP备17040376号-6 | 增值电信业务经营许可证: 苏B2-20130048号|</p>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/1.jpg" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/2.png" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/3.png" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/4.png" alt=""/>
+            </div>
+        </div>
+    </div>
+     <script src="js/jquery-1.11.3.js"></script>
+     <script src="js/login.js"></script>
+  </body>
+</html>

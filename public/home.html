@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+		   	*{margin: 0;padding: 0;}
+		   	i{font-style: normal;}
+		   	ul,li,dl,ol{list-style: none;}
+		   	#LoutiNav{ margin: 5px; width: 50px; position: fixed; top: 200px; left: 40px; display: none;}
+		   	#LoutiNav li{ width: 50px; height: 30px;border-bottom: 1px solid gray; line-height: 30px; text-align: center; cursor: pointer;}
+		   	#LoutiNav span{display: none;}
+		   	#LoutiNav .active{border-bottom:2px solid red}
+		   	#LoutiNav li:hover span{display: block; font-size: 15px; background: darkred; color: white;}
+		   	#LoutiNav li:hover i{display: none;}
+		   	#goTop{width: 40px;height: 40px; line-height: 40px;text-align: center; background: gray; position: fixed;bottom: 30px; right: 30px; cursor: pointer;border-radius: 5px; display: none; }
+		   	#goTop:hover{background: darkred; color: white;}
+		   	#header{height: 200px; background: palegoldenrod; text-align: center; line-height: 200px; font-size: 72px; margin: 0 auto;}
+		   	#erweima{width: 130px; height: 130px; background: palegreen; display: none; position: absolute; right: 46px; bottom: 5px;line-height: 130px; text-align: center; font-size: 20px; border-radius:10px ;}
+            .loucengqianzhui{
+                color:rgb(0,0,0,0);
+            }
+		   </style>
+</head>
+<body>
+    <!--top图1-->
+    <div class="top"></div>
+    <!--top图2-->
+    <div class="top2"></div>
+    <!--导航-->
+    <ul id="LoutiNav">
+			<li><i>热卖</i><span>热卖</span></li>
+			<li><i>手机</i><span>手机</span></li>
+			<li><i>电脑</i><span>电脑</span></li>
+			<li><i>平板</i><span>平板</span></li>
+			<li><i>智能</i><span>智能</span></li>
+			<li><i>家居</i><span>家居</span></li>
+			<li><i>配件</i><span>配件</span></li>
+		</ul>
+		<div id="goTop">
+			Top</div>
+    <div class="mycontainer" >
+        <div style="float:left ">
+                <ul class="n">
+                    <li><a href="#">首页</a><i>|</i></li>
+                    <li><a href="#">华为官网</a><i>|</i></li>
+                    <li><a href="#">荣耀官网</a><i>|</i></li>
+                    <li><a href="#">花粉俱乐部</a><i>|</i></li>
+                    <li><a href="#">帮助中心</a><i>|</i></li>
+                    <li><a href="#">V码(优购码)</a><i>|</i></li>
+                    <li><a href="#">企业购</a><i>|</i></li>
+                    <li><a href="#">Select Region</a><i>|</i></li>
+
+                    <!--下拉（套用jQuery）-->
+                    <!--<li class="dropdown">-->
+                        <!--<ul  class=" p-0 jiantou" data-toggle="dropdown">-->
+                            <!--<a href="">下载APP</a>-->
+                        <!--</ul>-->
+                        <!--<div class="dropdown-menu text-center">-->
+                            <!--<img src="img/erwei.png" alt=""/>-->
+                            <!--<h6>扫一扫</h6><a href="#">,下载客户端</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!--<li class="dropdown">-->
+                        <!--<ul  class=" p-0 jiantou" data-toggle="dropdown">-->
+                            <!--<a href="">更多精彩</a>-->
+                        <!--</ul>-->
+                        <!--<div class="dropdown-menu text-center">-->
+                            <!--<a class="dropdown-item" href="#">EMUI</a>-->
+                            <!--<a class="dropdown-item" href="#">应用市场</a>-->
+                            <!--<a class="dropdown-item" href="#">华为终端云空</a>-->
+                            <!--<a class="dropdown-item" href="#">开发者联盟</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!--下拉（用CSS写）-->
+                    <div class="user">下载APP
+                        <div class="msg">
+                            <p><img src="img/erwei.png" alt=""/></p>
+                            <h6>扫一扫</h6>
+                            <p><a>下载客户端</a></p>
+                        </div>
+                    </div>
+                    <div class="user float-left">更多精彩
+                        <div class="msg">
+                            <p><a>EMUI</a></p>
+                            <p><a>应用市场</a></p>
+                            <p><a>华为终端云空间</a></p>
+                            <p><a>开发者联盟</a></p>
+                        </div>
+                    </div>
+                </ul>
+        </div>
+        <div style="float: right; margin-right: 20px;">
+            <ul class="n">
+                <li><a href="">请登录</a></li>
+                <li><a href="">注册</a><i>|</i></li>
+                <li><a href="">我的订单</a></li>
+                <li class="dropdown"><a href="#"  data-toggle="dropdown">购物车</a>
+                    <div class="dropdown-menu text-center">
+                        <div style="height: 200px;width: 200px;">空</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+
+        <!--导航栏2-->
+        <div class="header">
+                <div style="float: left">
+                    <img src="img/logo.png" alt=""/>
+                </div>
+                <div class="n" >
+                    <ul><a href="">华为专区</a></ul>
+                    <ul><a href="">荣耀专区</a></ul>
+                    <ul><a href="">HUAWEI P20</a></ul>
+                    <ul><a href="">荣耀10</a></ul>
+                    <ul><a href="">nova 3i</a></ul>
+                    <ul><a href="">荣耀note 10</a></ul>
+                </div>
+                <div class="myinput">
+                    <input type="text" maxlength="200"/>
+                    <input type="submit" value="搜索" class="button"/>
+                    <div class="myinput-ding"></div>
+                </div>
+            </div>
+
+        <!--侧边栏-->
+        <div class="dingwei">
+            <div class="menu">
+                <ul class="menu-ul">
+                    <li>
+                        <div class="hander2 clearfix">
+                            <p><a href="">手机</a></p>
+                            <p><a href="">荣耀</a><a href="">P系列</a></p>
+                            <div class="mini-hander">
+                                <a href="#" class="m-0">
+                                    <div class="mini-top">
+                                        <div class="mini-top-1">
+                                            浏览手机频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">荣耀</a>
+                                        <a href="#">HUAWEI P系列</a>
+                                        <a href="#">荣耀畅玩系列</a>
+                                        <a href="#">HUAWEI Mate系列</a>
+                                    </div>
+                                    <div class="mini-body-1">
+                                        <a href="#">HUAWEI nova系列</a>
+                                        <a href="#">HUAWEI 麦芒系列</a>
+                                        <a href="#">华为畅享系列</a>
+                                        <a href="#">移动4G+专区</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/1.jpg" alt=""/>
+                                                <h6>HUAWEI nova3</h6>
+                                                <p>￥2999</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/2.jpg" alt=""/>
+                                                <h6>荣耀10</h6>
+                                                <p>￥2399</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/3.jpg" alt=""/>
+                                                <h6>HUAWEI p20</h6>
+                                                <p>￥3388</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="pos">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/4.jpg" alt=""/>
+                                                <h6>荣耀9i</h6>
+                                                <p>￥1399</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hander2 clearfix">
+                            <p><a href="">笔记本&平板</a></p>
+                            <p><a href="">平板电脑</a><a href="">笔记本电脑</a></p>
+                            <div class="mini-hander">
+                                <a href="#" class="m-0">
+                                    <div class="mini-top">
+                                        <div class="mini-top-1">
+                                            平板笔记本&平板频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">平板电脑</a>
+                                        <a href="#">笔记本电脑</a>
+                                        <a href="#">笔记本配件</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/5.jpg" alt=""/>
+                                                <h6>HUAWEI MatebookX Pro</h6>
+                                                <p>￥7988</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/6.jpg" alt=""/>
+                                                <h6>荣耀Magicbook</h6>
+                                                <p>￥5699</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/7.jpg" alt=""/>
+                                                <h6>华为平板  M5 8.4英寸</h6>
+                                                <p>￥2488</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="pos">
+                                        <a href="">
+                                            <div class="mini-foot-div">
+
+                                                <div class="mini-foot-div-pic">
+                                                    <img src="img/3pic/8.jpg" alt=""/>
+                                                    <h6>荣耀畅玩平板2</h6>
+                                                    <p>￥969</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hander2 clearfix">
+                            <p><a href="">智能穿戴</a></p>
+                            <p><a href="">手环 手表</a><a href="">VR</a></p>
+                            <div class="mini-hander">
+                                <a href="#" class="m-0">
+                                    <div class="mini-top">
+                                        <div class="mini-top-1">
+                                            浏览智能穿戴频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">手环</a>
+                                        <a href="#">手表</a>
+                                        <a href="#">VR</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/9.jpg" alt=""/>
+                                                <h6>华为手环 B5</h6>
+                                                <p>￥999</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/10.jpg" alt=""/>
+                                                <h6>荣耀手环3</h6>
+                                                <p>￥139</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/11.jpg" alt=""/>
+                                                <h6>HUAWEI WATCH2 Pro</h6>
+                                                <p>￥2538</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="pos">
+                                        <a href="">
+                                            <div class="mini-foot-div">
+
+                                                <div class="mini-foot-div-pic">
+                                                    <img src="img/3pic/12.jpg" alt=""/>
+                                                    <h6>荣耀创玩手环 A2</h6>
+                                                    <p>￥99</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hander2 clearfix">
+                            <p><a href="">智能家居</a></p>
+                            <p><a href="">路由器</a><a href="">电视盒子</a></p>
+                            <div class="mini-hander">
+                                <a href="#" class="m-0">
+                                    <div class="mini-top">
+                                        <div class="mini-top-1">
+                                            浏览智能家居频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">路由器</a>
+                                        <a href="#">电视盒子</a>
+                                        <a href="#">照明</a>
+                                        <a href="#">清洁</a>
+                                    </div>
+                                    <div class="mini-body-1">
+                                        <a href="#">电力猫</a>
+                                        <a href="#">卫浴</a>
+                                        <a href="#">影音</a>
+                                        <a href="#">分布式路由</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/13.jpg" alt=""/>
+                                                <h6>荣耀分布式路由</h6>
+                                                <p>￥799</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/14.jpg" alt=""/>
+                                                <h6>华为路由WS5 100</h6>
+                                                <p>￥139</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/15.jpg" alt=""/>
+                                                <h6>荣耀路由2</h6>
+                                                <p>￥179</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="pos">
+                                        <a href="">
+                                            <div class="mini-foot-div">
+                                                <div class="mini-foot-div-pic">
+                                                    <img src="img/3pic/16.jpg" alt=""/>
+                                                    <h6>华为路由Q2</h6>
+                                                    <p>￥799</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li >
+                        <div class="hander2 clearfix">
+                            <p><a href="">通用配件</a></p>
+                            <p><a href="">移动电源</a><a href="">耳机</a></p>
+                            <div class="mini-hander" >
+                                <a href="#" class="m-0">
+                                    <div class="mini-top" >
+                                        <div class="mini-top-1">
+                                            浏览通用配件频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">移动电源</a>
+                                        <a href="#">耳机</a>
+                                        <a href="#">音响</a>
+                                        <a href="#">自拍杆</a>
+                                    </div>
+                                    <div class="mini-body-1">
+                                        <a href="#">充电器</a>
+                                        <a href="#">摄像机</a>
+                                        <a href="#">智能硬件</a>
+                                        <a href="#">生活周边</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/17.jpg" alt=""/>
+                                                <h6>华为10000mAh 充电宝</h6>
+                                                <p>￥159</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/18.jpg" alt=""/>
+                                                <h6>荣耀xSport蓝牙耳机</h6>
+                                                <p>￥199</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/19.jpg" alt=""/>
+                                                <h6>华为智能体脂秤</h6>
+                                                <p>￥129</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="pos">
+                                        <a href="">
+                                            <div class="mini-foot-div">
+
+                                                <div class="mini-foot-div-pic">
+                                                    <img src="img/3pic/20.jpg" alt=""/>
+                                                    <h6>华为心晴耳机</h6>
+                                                    <p>￥129</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="hander2 clearfix">
+                            <p><a href="">专属配件</a></p>
+                            <p><a href="">保护壳</a><a href="">贴膜</a></p>
+                            <div class="mini-hander">
+                                <a href="#" class="m-0">
+                                    <div class="mini-top">
+                                        <div class="mini-top-1">
+                                            浏览专属配件频道
+                                        </div>
+                                        <div class="mini-top-2">
+                                            >
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mini-body">
+                                    <div class="mini-body-1">
+                                        <a href="#">保护壳</a>
+                                        <a href="#">保护套</a>
+                                        <a href="#">贴膜</a>
+                                        <a href="#">盒子专属配件</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mini-foot">
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/21.jpg" alt=""/>
+                                                <h6>HUAWEI P20手机套件</h6>
+                                                <p>￥159</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/22.jpg" alt=""/>
+                                                <h6>荣耀9 炫彩保护壳</h6>
+                                                <p>￥109</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="mini-foot-div">
+                                            <div class="mini-foot-div-pic">
+                                                <img src="img/3pic/23.jpg" alt=""/>
+                                                <h6>HUAWEI Mate 视窗皮套</h6>
+                                                <p>￥1999</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="pos">
+                                        <a href="">
+                                            <div class="mini-foot-div">
+
+                                                <div class="mini-foot-div-pic">
+                                                    <img src="img/3pic/24.jpg" alt=""/>
+                                                    <h6>荣耀V10 磁吸保护套</h6>
+                                                    <p>￥119</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--轮播图-->
+    <div class="lunbo">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- 指示符 -->
+                <ul class="carousel-indicators" style="min-width: 800px">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
+
+                <!-- 轮播图片 -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <!--<img src="img/lun1.jpg">-->
+                        <p class="lun" style="background-image: url(img/lun1.jpg);"></p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lun" style="background-image: url(img/lun2.jpg);"></p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lun" style="background-image: url(img/lun3.jpg);"></p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lun" style="background-image: url(img/lun4.jpg);"></p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lun" style="background-image: url(img/lun.jpg);"></p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lun" style="background-image: url(img/lun6.jpg);"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--轮播图下小标题-->
+     <div id="mH"></div>
+    <div class="mycontainer">
+        <ul class="cai-dan">
+            <li class="back-white">
+                <div class="log">
+                    <div class="log-div">
+                        <div class="log-div-img">
+                            <img src="img/log.png" class="w-100"/>
+                        </div>
+                        <div class="log-div-p">
+                            欢迎来到华为商城，请 <a href="#">登陆</a>还没有账号？
+                            <a href="#">注册</a>即可享受
+                            <p><a href="#" class="my-red">新人福利</a>&nbsp;&nbsp;&nbsp;<a href="#"class="my-red">会员频道</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="back-white">
+                <div class="log2">
+                    <ul class="log2-div">
+                        <li><img src="img/log/1.png" /><p>企业特惠</p></li>
+                        <li><img src="img/log/2.png" /><p>以旧换新</p></li>
+                        <li><img src="img/log/3.png" /><p>尾款支付</p></li>
+                        <li><img src="img/log/4.png" /><p>会员领券</p></li>
+                        <li><img src="img/log/5.png" /><p>数码特惠</p></li>
+                        <li><img src="img/log/6.png" /><p>用户专享</p></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="back-white">
+                <div class="log3">
+                    <ul class="log3-div">
+                        <li class="gong-gao"><a class="m-0" style="color: red">公告</a><a style="font-size:5px">华为商城火热招聘中</a></li>
+                        <li><img src="img/log/7.png" alt=""/><a>优购码</a></li>
+                        <li><img src="img/log/8.png" alt=""/><a>实名认证</a></li>
+                        <li><img src="img/log/9.png" alt=""/><a>补够保障</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+
+    <!--pic1-->
+   
+    <div class="mycontainer">
+        <div class="pic1">
+            <div class="pic1-shadow"><a  href="#"><img src="img/1pic/1.png" alt=""/></a></div>
+            <div class="pic1-shadow"><a href="#"><img src="img/1pic/2.png" alt="" /></a></div>
+            <div class="pic1-shadow"><a href="#"><img src="img/1pic/3.jpg" alt="" /></a></div>
+            <div class="pic1-shadow"><a href="#"><img src="img/1pic/4.jpg" alt="" /></a></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <!--楼层-->
+    <div id="main">
+    <!--倒计时抢购-->
+    <div class="mycontainer">
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        <h5>折扣优惠</h5>
+            <div class="xm-flashPurchase-countdown">
+                <p class="time-title">20:00 场</p>
+
+                <p class="sub">距离开始还有</p>
+                <div class="countdown">
+                    <span class="box lf">00</span>
+                    <span class="dosh lf">:</span>
+                    <span class="box lf minutes">00</span>
+                    <span class="dosh lf">:</span>
+                    <span class="box lf seconds">00</span>
+                </div>
+            </div>
+            <div class="xm-flashPurchase-countdown-body">
+                <div class="h2-flot"><a href="#"><p class="pic-shadow m-0 back-pic1"></p></a></div>
+                <div class="h2-flot"><a href="#"><p class="pic-shadow m-0 back-pic2"></p></a></div>
+                <div class="h2-flot"><a href="#"><p class="pic-shadow m-0 back-pic3"></p></a></div>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--pic2-->
+    
+    <div id="hotH"></div>
+    <div class="mycontainer"  id="f7">
+        <h5 >热卖单品</h5>
+        <div class="pic2">
+            <div class="pic1-shadow" >
+                <a  href="#"><img src="img/2pic/1.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="pic1-shadow pic2-div" v-for="hot in hot">
+            <a href="#" >
+                <p >
+                    <img :src="hot.pic"/>
+                </p>
+                <div class="pic2-div-d1">{{hot.uname}}</div>
+                <div class="pic2-div-d2">{{hot.title}}</div>
+                <div class="pic2-div-d3">￥{{hot.price}}</div>
+            </a>
+        </div>
+    </div>
+    <div class="mycontainer">
+        <a href=""><img src="img/3pic/2018062214341386.jpg" style="width: 1132px"/></a>
+    </div>
+   
+    <!--手机板块-->
+    <div id="phoneH"></div>
+    <div class="mycontainer">
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        <div class="my-small-hander">
+            <h5>手机</h5>
+            <ul class="my-small-hander2">
+                <li><a href="#">荣耀</a></li>
+                <li><a href="#">HUAWEI P系列</a></li>
+                <li><a href="#">荣耀畅玩系列</a></li>
+                <li><a href="#">HUAWEI Mate系统</a></li>
+                <li><a href="#">HUAWEI 麦芒系列</a></li>
+                <li><a href="#">HUAWEI nova系列</a></li>
+            </ul>
+            <h6><a href="#">更多></a></h6>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mycontainer" id="f6">
+        <a href="#"><div class="phone-style2 phone-pic"></div></a>
+        <div class="pic1-shadow my-div" v-for="phone in phone">
+        <a href="#" >
+        <p >
+        <img :src="phone.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{phone.uname}}</div>
+        <div class="pic2-div-d2">{{phone.title}}</div>
+        <div class="pic2-div-d3">￥{{phone.price}}</div>
+        </a>
+        </div>
+    </div>
+
+    <!--遍历模板-->
+    <!--<div class="pic1-shadow my-div">-->
+        <!--<a href="#" >-->
+            <!--<p >-->
+                <!--<img src="img/2pic/2.jpg"/>-->
+            <!--</p>-->
+            <!--<div class="pic2-div-d1">荣耀9青春版</div>-->
+            <!--<div class="pic2-div-d2">限时优惠300 尊享版赠好礼</div>-->
+            <!--<div class="pic2-div-d3">￥999</div>-->
+        <!--</a>-->
+    <!--</div>-->
+
+    <!--电脑板块-->
+     
+    <div class="mycontainer">
+        <div id="pcH"></div>
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+       
+            <div class="my-small-hander">
+                <h5>笔记本电脑</h5>
+                <ul class="my-small-hander2">
+                    <li><a href="#">平板电脑</a></li>
+                    <li><a href="#">笔记本电脑</a></li>
+                    <li><a href="#">笔记本配件</a></li>
+                </ul>
+                <h6><a href="#">更多></a></h6>
+            </div>  
+          <div class="clearfix"></div>
+   </div>
+    <div class="mycontainer" id="f1">
+        <a href="#"><div class="phone-style2 pc-pic"></div></a>
+
+        <div class="pic1-shadow my-div" v-for="pc in pc">
+        <a href="#" >
+        <p >
+        <img :src="pc.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{pc.uname}}</div>
+        <div class="pic2-div-d2">{{pc.title}}</div>
+        <div class="pic2-div-d3">￥{{pc.price}}</div>
+        </a>
+        </div>
+    </div>
+    <!--精品平板-->
+    
+    <div class="mycontainer">.
+        <div id="miniH"></div>
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        
+            <div class="my-small-hander">
+                <h5>精品平板</h5>
+                <ul class="my-small-hander2">
+                    <li><a href="#">平板电脑</a></li>
+                    <li><a href="#">笔记本电脑</a></li>
+                    <li><a href="#">笔记本配件</a></li>
+                </ul>
+                <h6><a href="#">更多></a></h6>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mycontainer" id="f2">
+        <a href="#"><div class="phone-style2 mini-pic"></div></a>
+        <div class="pic1-shadow my-div" v-for="mini in mini">
+        <a href="#" >
+        <p >
+        <img :src="mini.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{mini.uname}}</div>
+        <div class="pic2-div-d2">{{mini.title}}</div>
+        <div class="pic2-div-d3">￥{{mini.price}}</div>
+        </a>
+        </div>
+    </div>
+    <!--手表-->
+    <div class="mycontainer">
+        <div id="watchH"></div>
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        
+            <div class="my-small-hander">
+                <h5>智能穿戴</h5>
+                <ul class="my-small-hander2">
+                    <li><a href="#">手环</a></li>
+                    <li><a href="#">手表</a></li>
+                    <li><a href="#">VR</a></li>
+                </ul>
+                <h6><a href="#">更多></a></h6>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mycontainer" id="f3">
+        <a href="#"><div class="phone-style2 watch-pic"></div></a>
+        <div class="pic1-shadow my-div" v-for="watch in watch">
+        <a href="#" >
+        <p >
+        <img :src="watch.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{watch.uname}}</div>
+        <div class="pic2-div-d2">{{watch.title}}</div>
+        <div class="pic2-div-d3">￥{{watch.price}}</div>
+        </a>
+        </div>
+    </div>
+    <!--wifi-->
+    <div class="mycontainer">
+        <div id="wifiH"></div>
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        <div class="my-small-hander">
+            <h5>智能家居</h5>
+            <ul class="my-small-hander2">
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">分布式路由器</a></li>
+                <li><a href="#">电力猫</a></li>
+                <li><a href="#">随性wifi</a></li>
+                <li><a href="#">电视盒子</a></li>
+                <li><a href="#">清洁</a></li>
+            </ul>
+            <h6><a href="#">更多></a></h6>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mycontainer" id="f4">
+        <a href="#"><div class="phone-style3 wifi-pic"></div></a>
+        <div class="pic1-shadow my-div" v-for="wifi in wifi">
+        <a href="#" >
+        <p >
+        <img :src="wifi.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{wifi.uname}}</div>
+        <div class="pic2-div-d2">{{wifi.title}}</div>
+        <div class="pic2-div-d3">￥{{wifi.price}}</div>
+        </a>
+        </div>
+    </div>
+    <!--其他-->
+    <div class="mycontainer">
+        <div id="otherH"></div>
+        <h6 class="loucengqianzhui">*<div class="louceng"></div></h6>
+        <div class="my-small-hander">
+            <h5>热销配件</h5>
+            <ul class="my-small-hander2">
+                <li><a href="#">移动电源</a></li>
+                <li><a href="#">耳机</a></li>
+                <li><a href="#">充电器</a></li>
+                <li><a href="#">自拍杆</a></li>
+                <li><a href="#">音响</a></li>
+                <li><a href="#">U盘</a></li>
+            </ul>
+            <h6><a href="#">更多></a></h6>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="mycontainer" id="f5">
+        <a href="#"><div class="phone-style3 other-pic"></div></a>
+        <div class="pic1-shadow my-div" v-for="other in other">
+        <a href="#" >
+        <p >
+        <img :src="other.pic"/>
+        </p>
+        <div class="pic2-div-d1">{{other.uname}}</div>
+        <div class="pic2-div-d2">{{other.title}}</div>
+        <div class="pic2-div-d3">￥{{other.price}}</div>
+        </a>
+        </div>
+    </div>
+    <div class="mycontainer">
+        <a href=""><img src="img/3pic/2018062214341386.jpg" style="width: 1132px"/></a>
+    </div>
+</div>
+    <!--foot-->
+    <div class="my-foot1">
+        <div class="mycontainer">
+            <ul >
+                <li><img src="img/foot/f1.jpg" alt=""/><a>百强企业 品质保证</a></li>
+                <li><img src="img/foot/f2.jpg" alt=""/><a>7天退货 15天换货</a></li>
+                <li><img src="img/foot/f3.jpg" alt=""/><a>48元起免运费</a></li>
+                <li><img src="img/foot/f4.jpg" alt=""/><a>448家维修网点 全国联保</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="my-foot2">
+        <div class="mycontainer">
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>购物相关</h6>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">配送方式</a></li>
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>保修与退换货</h6>
+                <li><a href="#">保修政策</a></li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">退换货流程</a></li>
+                <li><a href="#">保修状态查询</a></li>
+                <li><a href="#">配件防伪查询</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>维修与技术支持</h6>
+                <li><a href="#">修后网点</a></li>
+                <li><a href="#">预约维修</a></li>
+                <li><a href="#">手机寄修</a></li>
+                <li><a href="#">配件价格查询</a></li>
+                <li><a href="#">上门服务</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>关于我们</h6>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">华为商城简介</a></li>
+                <li><a href="#">华为线下门店</a></li>
+                <li><a href="#">荣耀线下门店</a></li>
+                <li><a href="#">诚征英才</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>关注我们</h6>
+                <li><a href="#">新浪微博</a></li>
+                <li><a href="#">腾讯微博</a></li>
+                <li><a href="#">花粉俱乐部</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h6>友情链接</h6>
+                <li><a href="#">华为官网</a></li>
+                <li><a href="#">华为商城手机版</a></li>
+                <li><a href="#">荣耀官网</a></li>
+                <li><a href="#">花粉俱乐部</a></li>
+                <li><a href="#">网站地图</a></li>
+            </ul>
+            <ul class="my-foot2-ul">
+                <p></p>
+                <h4>400-088-6888</h4>
+                <li><a href="#">24小时客服热线(仅收市花费)</a></li>
+                <li><a href="#" class="my-foot2-button"><div> 📱 在线客服</div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="my-foot3">
+        <div class="mycontainer">
+            <div class="my-foot3-img">
+                <img src="img/foot/flogo.png" alt=""/>
+            </div>
+            <div class="my-foot3-p">
+                <p>隐私声明 服务协议 Copyright @2012-2108 华为软件技术有限公司 版权所有 保留一切权力</p>
+                <p>公安备案 苏公网备案32011402010009号 | 苏ICP备17040376号-6 | 增值电信业务经营许可证: 苏B2-20130048号|</p>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/1.jpg" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/2.png" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/3.png" alt=""/>
+            </div>
+            <div class="my-foot4-img">
+                <img src="img/foot/4.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    //////////////////////////////////////////
+    <script type="text/javascript">
+        setTimeout(function(){
+        $(".top").css("display","none");
+        },4900);
+        setTimeout(function(){
+            $(".top2").css("display","block");
+        },4800);
+
+    </script>
+    <script src="js/ajax.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
